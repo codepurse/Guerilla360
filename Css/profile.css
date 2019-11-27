@@ -1,3 +1,19 @@
+@font-face {
+    font-family: "Mont Demo";
+    src: url("../Asset/Font/mont/Mont-HeavyDEMO.otf");
+}
+
+@font-face {
+    font-family: "Abril Fatface";
+    src: url("../Asset/Font/abril-fatface/AbrilFatface-Regular.otf");
+}
+
+@font-face {
+    font-family: "Gotham light";
+    src: url("../Asset/Font/gotham_ssv/Gotham-Light.otf");
+}
+
+
 @media only screen and (min-width: 1200px) {
     .con {
         max-width: 1300px !important;
