@@ -132,7 +132,7 @@ video {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   font-size: 4.4rem;
-  font-family: 'Mont Demo';
+  font-family: Mont Demo;
   font-weight: bold;
   text-align: left;
   margin-left: 30%;
@@ -216,6 +216,7 @@ li {
 }
 
 a {
+  font-family: Mont Demo;
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
@@ -227,6 +228,7 @@ a {
 }
 
 a:after {
+  font-family: Mont Demo;
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -240,6 +242,7 @@ a:after {
 }
 
 a:hover:after {
+  font-family: Mont Demo;
   width: 100%;
   left: 0;
 }
