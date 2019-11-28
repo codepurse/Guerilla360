@@ -1,3 +1,23 @@
+@font-face {
+  font-family: "Mont Demo light";
+  src: url("../Asset/Font/mont/Mont-ExtraLightDEMO.otf");
+}
+
+@font-face {
+  font-family: "Mont Demo";
+  src: url("../Asset/Font/mont/Mont-HeavyDEMO.otf");
+}
+
+@font-face {
+  font-family: "Abril Fatface";
+  src: url("../Asset/Font/abril-fatface/AbrilFatface-Regular.otf");
+}
+
+@font-face {
+  font-family: "Gotham light";
+  src: url("../Asset/Font/gotham_ssv/Gotham-Light.otf");
+}
+
 html, body {
   width: 100%;
   height: 100%;
@@ -254,7 +274,7 @@ a:hover:after {
 }
 
 .lblfooter {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Gotham light;
   font-size: 0.9rem;
   color: #212121;
 }
