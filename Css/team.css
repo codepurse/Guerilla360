@@ -1,13 +1,34 @@
+@font-face {
+    font-family: "Mont Demo light";
+    src: url("../Asset/Font/mont/Mont-ExtraLightDEMO.otf");
+}
+
+@font-face {
+    font-family: "Mont Demo";
+    src: url("../Asset/Font/mont/Mont-HeavyDEMO.otf");
+}
+
+@font-face {
+    font-family: "Abril Fatface";
+    src: url("../Asset/Font/abril-fatface/AbrilFatface-Regular.otf");
+}
+
+@font-face {
+    font-family: "Gotham light";
+    src: url("../Asset/Font/gotham_ssv/Gotham-Light.otf");
+}
+
+@media only screen and (min-width: 1200px) {
+    .con {
+        max-width: 1300px !important;
+    }
+}
+
 html, body {
     width: 100%;
     height: 100%;
-    background-color: #e2e2e2;
-    overflow: hidden;
-}
-
-video {
-    width: 100%;
-    max-height: 100%;
+    background: url('../Asset/Image/bgmeet.png');
+    background-repeat: repeat;
 }
 
 .button_container {
@@ -18,7 +39,7 @@ video {
     background-color: black;
     width: 35px;
     cursor: pointer;
-    z-index: 10000;
+    z-index: 99999999999;
     transition: opacity .25s ease;
 }
 
@@ -74,7 +95,7 @@ video {
     visibility: hidden;
     transition: opacity .35s, visibility .35s, height .35s;
     overflow: hidden;
-    z-index: 1000;
+    z-index: 99999999999;
 }
 
 .overlay.open {
@@ -231,44 +252,106 @@ a:hover:after {
 }
 
 .divlabel {
-    position: fixed;
-    top: 5%;
-    left: 44%;
-    font-family: 'Courier New', Courier, monospace;
-    font-style: italic;
-    font-size: 1.7rem;
-}
-
-.divfooter {
-    position: fixed;
-    bottom: 3%;
-    left: 38%;
-}
-
-.lblfooter {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 0.9rem;
-    color: #212121;
-}
-
-.lbltitle {
-    left: 0px;
-    width: 100%;
-    color: #212121;
     position: absolute;
-    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.lbllabel {
+    font-family: 'Courier New', Courier, monospace;
+    color: #212121;
+    font-style: italic;
+    font-size: 1.5rem;
 }
 
 .pmeet {
     font-family: Mont Demo;
     color: #424242;
     font-size: 5rem;
-    font-weight: bold;
-    margin-top: 4%;
 }
 
-.col1 {
-    height: 78%;
-    top: 12%;
-    max-height: 78%;
+.pname {
+    font-family: Mont Demo;
+    color: #212121;
+    font-size: 2.4rem;
 }
+
+.pposition {
+    font-family: Gohtam;
+    color: #212121;
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-top: -10px;
+    line-height: 110%;
+}
+
+.slanted {
+    position: relative;
+    width: 500px;
+    padding: 20px 50px 20px 50px;
+    overflow: hidden;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.35);
+    
+}
+
+.slanted::before, .slanted::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    /* = beneath content */
+    background-color: #e2e2e2;
+    border-color: #e2e2e2;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    
+}
+
+.slanted::before {
+    top: 0;
+    right: 0;
+    bottom: 50px;
+    /* = border-top-width of ::after */
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.slanted:after {
+    top: auto;
+    right: -5px;
+    /* + some px to mask pixel rounding "crack" that could possibly occur while zoomed */
+    bottom: 0;
+    border-style: solid;
+    border-width: 50px 50px 0 0;
+    /* this is the actual slanted bottom "block" */
+    background-color: transparent;
+    border-right-color: transparent;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    /* this is the "notch" */
+}
+
+.pdescription {
+    font-family: Gotham light;
+    color: #212121;
+    font-size: 0.9rem;
+    line-height: 125%;
+}
+
+.pview {
+    font-family: Gotham medium;
+    color: #212121;
+    font-size: 1.1rem;
+}
+
+.lblfooter {
+    font-family: Gotham light;
+    font-size: 0.9rem;
+    color: #212121;
+  }
+  
