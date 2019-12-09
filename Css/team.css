@@ -293,7 +293,6 @@ a:hover:after {
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.35);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.35);
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.35);
-    
 }
 
 .slanted::before, .slanted::after {
@@ -307,7 +306,6 @@ a:hover:after {
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    
 }
 
 .slanted::before {
@@ -353,5 +351,4 @@ a:hover:after {
     font-family: Gotham light;
     font-size: 0.9rem;
     color: #212121;
-  }
-  
+}
