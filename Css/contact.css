@@ -13,10 +13,35 @@
     src: url("../Asset/Font/gotham_ssv/Gotham-Light.otf");
 }
 
-
 @media only screen and (min-width: 1200px) {
     .con {
         max-width: 1300px !important;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .txt1, .txt2 {
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width: 511px) {
+    .con {
+        margin-top: 55px !important;
+    }
+    .pconnect {
+        font-size: 35px !important;
+    }
+    .overlay nav {
+        font-size: 25px !important;
+        margin-left: 0% !important;
+    }
+    .overlay ul li {
+        height: calc(100% / 7);
+    }
+    .paddress, .pcontact {
+        font-size: 15px !important;
+        text-align: center !important;
     }
 }
 
@@ -250,6 +275,7 @@ a:hover:after {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    margin-top: 55px;
 }
 
 .lbllabel {

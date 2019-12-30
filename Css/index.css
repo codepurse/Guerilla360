@@ -263,9 +263,6 @@ a:hover:after {
 }
 
 .col1 {
-  background-image: url("../Asset/Image/bg.jfif");
-  background-size: cover;
-  background-repeat: no-repeat;
   height: 78%;
   top: 12%;
 }
@@ -292,4 +289,12 @@ a:hover:after {
   color: #fff;
   position: absolute;
   bottom: 2%;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
 }

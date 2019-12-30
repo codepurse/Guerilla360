@@ -24,6 +24,24 @@
     }
 }
 
+@media only screen and (max-width: 511px) {
+    .overlay nav {
+        font-size: 25px !important;
+        margin-left: 0% !important;
+    }
+    .overlay ul li {
+        height: calc(100% / 7);
+    }
+    .pservices {
+        font-size: 35px !important;
+        margin-top: 25px !important;
+    }
+    .pweb {
+        font-size: 30px !important;
+        margin-top: 10px;
+    }
+}
+
 html, body {
     width: 100%;
     height: 100%;
@@ -253,6 +271,7 @@ a:hover:after {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    top: 55px;
 }
 
 .lbllabel {
