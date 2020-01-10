@@ -25,7 +25,7 @@
     <div class="container-fluid h-100 con" style="z-index: 999;background-color: black;position: absolute;">
         <div class="row h-100 align-items-center">
             <div class="col-lg-12">
-                <video id="myVideo" width="500" height="400" autoplay="autoplay">
+                <video id="myVideo" width="500" height="400">
                     <source src="Asset/Video/loading.mp4" type="video/mp4" />
                 </video>
             </div>
@@ -75,6 +75,8 @@
     </div>
 </body>
 <script>
+    var vid = document.getElementById("myVideo");
+
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
     })
@@ -88,6 +90,10 @@
     vid.onended = function () {
         $(".con").addClass("animated fadeOut faster");
     };
+
+    $("#myVideo").on("loadstart", function () {
+        vid.play();
+    });
 </script>
 
 </html>
