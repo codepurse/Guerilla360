@@ -75,6 +75,13 @@
     .pServices {
         font-size: 1.2rem !important;
     }
+    .overlay nav {
+        font-size: 30px !important;
+        margin-left: 0% !important;
+    }
+    .overlay ul li {
+        height: calc(100%/ 5) !important;
+    }
 }
 
 html, body {
@@ -85,7 +92,7 @@ html, body {
 
 .button_container {
     position: absolute;
-    right: 5px;
+    right: 25px;
     top: 28px;
     background-color: black;
     width: 35px;
@@ -481,4 +488,5 @@ a:hover:after {
     width: 80px;
     cursor: pointer;
     transition: all 0.2s;
+    margin-top: 10px;
 }

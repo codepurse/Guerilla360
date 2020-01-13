@@ -37,7 +37,8 @@
         </nav>
     </div>
 
-    <div class="container-fluid conNavbar" style="padding: 0px;position: fixed;z-index: 999999999999999999999999999999;">
+    <div class="container-fluid conNavbar"
+        style="padding: 0px;position: fixed;z-index: 999999999999999999999999999999;">
         <div class="row">
             <div class="col-lg-12" style="position: relative;z-index:999999999999999999999999;">
                 <img src="Asset/Image/blacklogo.png" class="img-fluid imgLogo"
@@ -51,7 +52,7 @@
         </div>
     </div>
 
-    <div class="container-fluid h-100" style="padding: 0px;">
+    <div class="container-fluid h-100 conBg" style="padding: 0px;">
         <div class="container-fluid h-100" style="position: relative;">
             <div class="banner">
                 <video autoplay muted loop id="myVideo">
@@ -226,14 +227,22 @@
         var scroll = $(window).scrollTop();
         if (scroll < 50) {
             $('.conNavbar').css('background', 'transparent');
-            $('.imgLogo').attr("src","Asset/Image/blacklogo.png")
-            $('.button_container span').css("background-color","black")
+            $('.imgLogo').attr("src", "Asset/Image/blacklogo.png")
+            $('.button_container span').css("background-color", "black")
         } else {
-            $('.conNavbar').css('background','#212121');
-            $('.imgLogo').attr("src","Asset/Image/whitelogo.png")
-            $('.button_container span').css("background-color","white")
+            $('.conNavbar').css('background', '#212121');
+            $('.imgLogo').attr("src", "Asset/Image/whitelogo.png")
+            $('.button_container span').css("background-color", "white")
         }
     });
+
+    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    var element = document.getElementById('text');
+    if (isMobile) {
+        $('.banner').css('display', 'none');
+    } else {
+        $('.banner').css('display', 'block');
+    }
 </script>
 
 </html>

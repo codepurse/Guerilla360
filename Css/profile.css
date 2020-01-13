@@ -66,14 +66,17 @@
         padding-bottom: 100px !important;
     }
     .overlay nav {
-        font-size: 25px !important;
+        font-size: 30px !important;
         margin-left: 0% !important;
     }
     .overlay ul li {
-        height: calc(100% / 7);
+        height: calc(100%/ 5) !important;
     }
     .colProfileDesc {
         margin-top: 40px;
+    }
+    .divfooter {
+        display: none !important;
     }
 }
 
@@ -350,7 +353,7 @@ a:hover:after {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 2%;
+    bottom: 25px;
 }
 
 .lblfooter {
@@ -362,4 +365,8 @@ a:hover:after {
 .imgprofilepic {
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px  #222);
+}
+
+.conNavbar {
+    transition: all 0.2s;
 }
