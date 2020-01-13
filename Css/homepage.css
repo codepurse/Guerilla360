@@ -116,6 +116,7 @@ html, body {
     height: 100%;
     background-color: #424242;
     overflow: hidden;
+    scroll-behavior: smooth;
 }
 
 #myVideo1 {
@@ -131,7 +132,7 @@ html, body {
 }
 
 .conBg {
-    background: url("../Asset/Image/phonebg1.png");
+    background: url("../Asset/Image/phonebg.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -173,12 +174,12 @@ html, body {
 .button_container.active .top {
     -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
     transform: translateY(11px) translateX(0) rotate(45deg);
-    background: #fff;
+    background: #fff !important;
 }
 
 .button_container.active .middle {
     opacity: 0;
-    background: #fff;
+    background: #fff !important;
 }
 
 .button_container.active .bottom {
@@ -218,7 +219,7 @@ html, body {
     visibility: hidden;
     transition: opacity .35s, visibility .35s, height .35s;
     overflow: hidden;
-    z-index: 10000000;
+    z-index: 99999999999999999999999999999;
 }
 
 .overlay.open {
