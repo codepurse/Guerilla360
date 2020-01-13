@@ -338,3 +338,7 @@ a:hover:after {
     font-size: 0.9rem;
     color: white;
 }
+
+.conNavbar {
+    transition: all 0.2s;
+}
