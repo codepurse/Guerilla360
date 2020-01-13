@@ -266,6 +266,14 @@
         $('body').css('overflow', 'visible');
     };
 
+    window.onload = function () { 
+        $(".conVideo").addClass("animated fadeOut faster");
+        vid.play();
+        $(".conVideo").css("display","none");
+        $('html').css('overflow', 'visible');
+        $('body').css('overflow', 'visible');
+    }
+
 </script>
 
 </html>

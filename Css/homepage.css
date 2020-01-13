@@ -567,7 +567,7 @@ a:hover:after {
 }
 
 .cardSolution1:hover, .cardSolution2:hover, .cardSolution3:hover {
-    background-color: black;
+    background-color: black !important;
 }
 
 .cardSolution1:hover *, .cardSolution2:hover *, .cardSolution3:hover * {
