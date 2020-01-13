@@ -43,11 +43,14 @@
         display: flex !important;
     }
     .overlay nav {
-        font-size: 25px !important;
+        font-size: 30px !important;
         margin-left: 0% !important;
     }
     .overlay ul li {
-        height: calc(100% / 4) !important;
+        height: calc(100%/ 5) !important;
+    }
+    .imgProfile {
+        margin-left: 50px !important;
     }
 }
 
@@ -58,15 +61,19 @@ html, body {
     background-repeat: repeat;
 }
 
+.conNavbar {
+    transition: all 0.2s;
+}
+
 .button_container {
-    position: fixed;
-    top: 5%;
-    right: 2%;
+    position: absolute;
+    top: 28px;
+    right: 28px;
     height: px;
     background-color: black;
     width: 35px;
     cursor: pointer;
-    z-index: 99999999999;
+    z-index: 10000000000;
     transition: opacity .25s ease;
 }
 
@@ -88,11 +95,11 @@ html, body {
 .button_container.active .bottom {
     -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
     transform: translateY(-11px) translateX(0) rotate(-45deg);
-    background: #fff;
+    background: #fff !important;
 }
 
 .button_container span {
-    background: #212121;
+    background: black;
     border: none;
     height: 3px;
     width: 100%;

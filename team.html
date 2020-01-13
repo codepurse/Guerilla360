@@ -22,6 +22,22 @@
 </head>
 
 <body>
+    <div class="container-fluid conNavbar"
+        style="padding: 0px;position: fixed;top:0;z-index: 99999999999999999999999999999999999999999999999;">
+        <div class="row">
+            <div class="col-lg-12" style="position: relative;z-index:999999999999999999999999;">
+                <img src="Asset/Image/blacklogo.png" class="img-fluid imgLogo"
+                    style="width: 80px;margin-left: 1%;margin-top: 10px;">
+                <div class="button_container" id="toggle">
+                    <span class="top"></span>
+                    <span class="middle"></span>
+                    <span class="bottom"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <div class="overlay" id="overlay">
         <nav class="overlay-menu">
             <ul>
@@ -32,22 +48,9 @@
             </ul>
         </nav>
     </div>
-    <div class="container-fluid">
-        <div class="navbar" style="width: 100%;">
-            <div class="divlogo">
-                <img src="Asset/Image/blacklogo.png" style="width: 75px;position:fixed;top:2.5%;left:2%;"
-                    class="img-fluid" />
-            </div>
-            <div class="divlabel">
-                <label class="lbllabel">Guerilla360</label>
-            </div>
-            <div class="button_container" id="toggle">
-                <span class="top"></span>
-                <span class="middle"></span>
-                <span class="bottom"></span>
-            </div>
-        </div>
-    </div>
+
+
+
     <div class="container con" style="margin-top: 70px;">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -102,8 +105,10 @@
                         <label class="pposition">Technology Director</label>
                     </div>
                     <div class="col-lg-6 order-first order-md-last order-lg-last">
-                        <img src="Asset/Image/meetmark.png" class="img-fluid imgProfile"
-                            style="width: 250px;margin-left:-30px;">
+                        <a href="mark.html">
+                            <img src="Asset/Image/meetmark.png" class="img-fluid imgProfile"
+                                style="width: 250px;margin-left:-30px;">
+                        </a>
                     </div>
                 </div>
                 <div class="slanted" style="margin-top:-20px;z-index: 9999;">
@@ -119,8 +124,10 @@
                         <label class="pposition">UI/UX Designer</label>
                     </div>
                     <div class="col-lg-6 order-first order-md-last order-lg-last">
-                        <img src="Asset/Image/meetyena.png" class="img-fluid imgProfile"
-                            style="width: 250px;margin-left:-30px;">
+                        <a href="yena.html">
+                            <img src="Asset/Image/meetyena.png" class="img-fluid imgProfile"
+                                style="width: 250px;margin-left:-30px;">
+                        </a>
                     </div>
                 </div>
                 <div class="slanted" style="margin-top:-20px;z-index: 9999;">
@@ -142,8 +149,10 @@
                         <label class="pposition">Frontend Developer</label>
                     </div>
                     <div class="col-lg-6 order-first order-md-last order-lg-last">
-                        <img src="Asset/Image/meetalfon.png" class="img-fluid imgProfile"
-                            style="width: 250px;margin-left:-30px;">
+                        <a href="alfon.html">
+                            <img src="Asset/Image/meetalfon.png" class="img-fluid imgProfile"
+                                style="width: 250px;margin-left:-30px;">
+                        </a>
                     </div>
                 </div>
                 <div class="slanted" style="margin-top:-20px;z-index: 9999;">
@@ -163,8 +172,10 @@
                         <label class="pposition">Mobile Developer</label>
                     </div>
                     <div class="col-lg-6 order-first order-md-last order-lg-last">
-                        <img src="Asset/Image/meetbrayan.png" class="img-fluid imgProfile"
-                            style="width: 250px;margin-left:-30px;">
+                        <a href="brayan.html">
+                            <img src="Asset/Image/meetbrayan.png" class="img-fluid imgProfile"
+                                style="width: 250px;margin-left:-30px;">
+                        </a>
                     </div>
                 </div>
                 <div class="slanted" style="margin-top:-20px;z-index: 9999;">
@@ -186,8 +197,10 @@
                         <label class="pposition">Creative Designer</label>
                     </div>
                     <div class="col-lg-6 order-first order-md-last order-lg-last">
-                        <img src="Asset/Image/meeteskye.png" class="img-fluid imgProfile"
-                            style="width: 250px;margin-left:-30px;">
+                        <a href="eskye.html">
+                            <img src="Asset/Image/meeteskye.png" class="img-fluid imgProfile"
+                                style="width: 250px;margin-left:-30px;">
+                        </a>
                     </div>
                 </div>
                 <div class="slanted" style="margin-top:-20px;z-index: 9999;">
@@ -207,8 +220,10 @@
                         <label class="pposition">Web Developer</label>
                     </div>
                     <div class="col-lg-6 order-first order-md-last order-lg-last">
-                        <img src="Asset/Image/meetleo.png" class="img-fluid imgProfile"
-                            style="width: 250px;margin-left:-30px;">
+                        <a href="leo.html">
+                            <img src="Asset/Image/meetleo.png" class="img-fluid imgProfile"
+                                style="width: 250px;margin-left:-30px;">
+                        </a>
                     </div>
                 </div>
                 <div class="slanted" style="margin-top:-20px;z-index: 9999;">
@@ -240,6 +255,19 @@
     $('#toggle').click(function () {
         $(this).toggleClass('active');
         $('#overlay').toggleClass('open');
+    });
+
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        if (scroll < 50) {
+            $('.conNavbar').css('background', 'transparent');
+            $('.imgLogo').attr("src", "Asset/Image/blacklogo.png")
+            $('.button_container span').css("background-color", "black")
+        } else {
+            $('.conNavbar').css('background', '#212121');
+            $('.imgLogo').attr("src", "Asset/Image/whitelogo.png")
+            $('.button_container span').css("background-color", "white")
+        }
     });
 </script>
 

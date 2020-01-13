@@ -72,11 +72,11 @@
         padding-bottom: 100px !important;
     }
     .overlay nav {
-        font-size: 25px !important;
+        font-size: 30px !important;
         margin-left: 0% !important;
     }
     .overlay ul li {
-        height: calc(100% / 7);
+        height: calc(100%/ 5) !important;
     }
     .colProfileDesc {
         margin-top: 40px;
