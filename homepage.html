@@ -22,6 +22,17 @@
 </head>
 
 <body>
+    <div class="container-fluid h-100 conVideo" style="z-index: 99999999;background-color: black;position: fixed;width: 100%;">
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-12">
+                <video id="myVideo1" width="500" height="400" autoplay>
+                    <source src="Asset/Video/loading.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+    </div>
+
+
     <div class="overlay" id="overlay">
         <nav class="overlay-menu">
             <ul>
@@ -55,7 +66,7 @@
     <div class="container-fluid h-100 conBg" style="padding: 0px;">
         <div class="container-fluid h-100" style="position: relative;">
             <div class="banner">
-                <video autoplay muted loop id="myVideo">
+                <video muted  id="myVideo">
                     <source src="Asset/Video/main.mp4" type="video/mp4">
                     Your browser does not support HTML5 video.
                 </video>
@@ -243,6 +254,16 @@
     } else {
         $('.banner').css('display', 'block');
     }
+
+    var vid = document.getElementById("myVideo");
+    var vid1 = document.getElementById("myVideo1");
+    vid1.onended = function () {
+        $(".conVideo").addClass("animated fadeOut faster");
+        vid.play();
+        $('html').css('overflow', 'visible');
+        $('body').css('overflow', 'visible');
+    };
+
 </script>
 
 </html>
