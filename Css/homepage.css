@@ -81,6 +81,34 @@
     .colProfileDesc {
         margin-top: 40px;
     }
+    .pFooter {
+        font-size: 0.9rem !important;
+        text-align: center !important;
+    }
+    .divFooter {
+        margin-top: 10px !important;
+        float: left !important;
+    }
+    .pAbout, .pSolutions {
+        font-size: 1.5rem !important;
+    }
+    .pAboutDesc {
+        font-size: 0.9rem !important;
+    }
+}
+
+@media (min-aspect-ration:16/9) {
+    video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ration:16/9) {
+    video {
+        width: 100%;
+        height: auto;
+    }
 }
 
 html, body {
@@ -89,20 +117,36 @@ html, body {
     background-color: #424242;
 }
 
-video {
+.conNavbar {
+    transition: all 0.2s;
+}
+
+.banner {
     width: 100%;
-    max-height: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
+
+.banner video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
 }
 
 .button_container {
-    position: fixed;
-    top: 5%;
+    position: absolute;
+    top: 28px;
     right: 2%;
     height: px;
     background-color: black;
     width: 35px;
     cursor: pointer;
-    z-index: 1000000000000;
+    z-index: 10000000000;
     transition: opacity .25s ease;
 }
 
@@ -128,7 +172,7 @@ video {
 }
 
 .button_container span {
-    background: #fff;
+    background: black;
     border: none;
     height: 3px;
     width: 100%;
@@ -505,10 +549,42 @@ a:hover:after {
     transition: all 0.2s;
 }
 
-.cardSolution1:hover, .cardSolution2:hover, .cardSolution3:hover  {
+.cardSolution1:hover, .cardSolution2:hover, .cardSolution3:hover {
     background-color: black;
 }
 
 .cardSolution1:hover *, .cardSolution2:hover *, .cardSolution3:hover * {
     color: white !important;
+}
+
+.pFooter {
+    font-family: Mont Demo;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.pFooter:hover {
+    color: #d3b675;
+}
+
+.imgFooter {
+    width: 28px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.imgFooter:hover {
+    -webkit-filter: opacity(0.2) drop-shadow(0 0 0 #d3b675);
+    filter: opacity(0.2) drop-shadow(0 0 0 #d3b675);
+}
+
+.imgLogo {
+    width: 80px;
+    cursor: pointer;
+    transition: all 0.2s;
 }
