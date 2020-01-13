@@ -23,7 +23,7 @@
     <title>Guerilla360 Integrated Solutions</title>
 </head>
 
-<body>
+<body onload="playVideo()">
     <div class="container-fluid h-100 conVideo"
         style="z-index: 99999999;background-color: black;position: fixed;width: 100%;">
         <div class="row h-100 align-items-center">
@@ -202,6 +202,12 @@
     </div>
 </body>
 <script>
+    var vid1 = document.getElementById("myVideo1");
+    function codeAddress() {
+        vid1.play();
+    }
+    window.onload = codeAddress;
+
     $(function () {
         $('[data-toggle="tooltip"]').tooltip();
     });
@@ -252,9 +258,9 @@
     var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
     var element = document.getElementById('text');
     if (isMobile) {
-       $('.banner').attr("style","display: none !important;")
+        $('.banner').attr("style", "display: none !important;")
     } else {
-        $('.banner').attr("style","block: none !important;")
+        $('.banner').attr("style", "block: none !important;")
     }
 
     var vid = document.getElementById("myVideo");
@@ -266,10 +272,10 @@
         $('body').css('overflow', 'visible');
     };
 
-    window.onload = function () { 
+    window.onload = function () {
         $(".conVideo").addClass("animated fadeOut faster");
         vid.play();
-        $(".conVideo").css("display","none");
+        $(".conVideo").css("display", "none");
         $('html').css('overflow', 'visible');
         $('body').css('overflow', 'visible');
     }
