@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,9 +21,40 @@
 </head>
 
 <body>
-    <div class="container-fluid conServices3 h-100">
+    <div class="overlay" id="overlay">
+        <nav class="overlay-menu">
+            <ul>
+                <li style="width: 100% !important;"><a href="#">Home</a></li>
+                <li style="width: 100% !important;"><a href="#">Services</a></li>
+                <li style="width: 100% !important;">
+                    <a href="team.html">Meet the team</a>
+                </li>
+                <li style="width: 100% !important;">
+                    <a href="#">Connect with us</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container-fluid conNavbar">
+        <div class="container con">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                    <img src="Asset/Image/whitelogo.png" class="img-fluid imgLogo">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                    <div class="button_container" id="toggle">
+                        <span class="top"></span>
+                        <span class="middle"></span>
+                        <span class="bottom"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid conServices3 h-100" style="padding-top: 50px;">
         <div class="container con h-100">
-            <div class="row align-items-center h-100" style="position:relative;">
+            <div class="row align-items-center h-100" style="position:relative;padding-top: 100px;">
                 <div class="divServicesTitle">
                     <p class="pServicesTitle">PERSONAL OUTSOURCING</p>
                 </div>
@@ -56,17 +86,64 @@
                 </div>
                 <div class="col-lg-6">
                     <p class="pType text-center">MANAGEMENT COVERAGE & SERVICE</p>
-                    <p class = "pOutsourcingTitle">PERSONNEL RECRUITMENT</p>
-                    <p class = "pOutsourcingTitleDesc">With our team, we will match the right candidates with your specific talent needs.</p>
-                    <p>MANAGEMENT SOLUTIONS & FACILITIES</p>
-                    <p>Each personnel assigned to your company, will be provided training and facilitation in order to
+                    <p class="pOutsourcingTitle">PERSONNEL RECRUITMENT</p>
+                    <p class="pOutsourcingTitleDesc">With our team, we will match the right candidates with your
+                        specific talent needs.</p>
+                    <p class="pOutsourcingTitle">MANAGEMENT SOLUTIONS & FACILITIES</p>
+                    <p class="pOutsourcingTitleDesc">Each personnel assigned to your company, will be provided training
+                        and facilitation in order to
                         better understand his/her function. With this, we will provide your per-sonnel access to
                         facilities in order to make their work eective; Dedicated Work Spa-ces, Internet Connection,
                         Conference Rooms, Food and Refreshments.</p>
+                    <p class="pOutsourcingTitle">PROJECT MANAGEMENT AND MONITORING </p>
+                    <p class="pOutsourcingTitleDesc">Your company will be assigned an Guerilla360 Project Manager in
+                        order to help keeptrack of
+                        milestones and KPIs developed by your company. Software Development Services & VS. Personnel
+                        Outsourcing Digital Marketing Services</p>
+                    <p class="pOutsourcingTitleDesc">What’s the diference between the two?... Aren’t they the same
+                        thing?... Which ser-vice should I
+                        go for? Each business requires specific tailor fit solutions. We advise businesses which better
+                        route to take in terms of outsourcing functions and skills in their business. For Software
+                        Development Services & Digital Marketing Services, we provide a hands on approach in managing
+                        your accounts, we will work directly with your company to establish KPls and milestones, as well
+                        as provide extensive consul-tancy services.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background-color: #212121;">
+        <div class="container con" style="padding: 40px 0px;">
+            <div class="row" style="margin-top: 40px;">
+                <div class="col-lg-6">
+                    <div class="form-inline">
+                        <p class="pFooter">HOME</p>
+                        <P class="pFooter">SERVICES</P>
+                        <P class="pFooter">MEET THE TEAM</P>
+                        <P class="pFooter">CONTACT</P>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-inline float-right divFooter" style="margin-top: -10px;">
+                        <img src="Asset/Image/facebook.png" class="img-fluid imgFooter"
+                            style="width: 28px;margin-right: 15px;">
+                        <img src="Asset/Image/instagram.png" class="img-fluid imgFooter"
+                            style="width: 28px;margin-right: 15px;">
+                        <img src="Asset/Image/linkedin.png" class="img-fluid imgFooter" style="width: 28px;">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
+<script>
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        if (scroll < 50) {
+            $('.conNavbar').css('background', 'transparent');
+        } else {
+            $('.conNavbar').css('background', 'black');
+        }
+    });
+</script>
 
 </html>

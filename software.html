@@ -37,20 +37,26 @@
         </nav>
     </div>
 
-    <div class="container-fluid conServices1 h-100">
-        <div class="navbar" style="width: 100%;">
-            <div class="divlogo">
-                <img src="Asset/Image/whitelogo.png" style="width: 75px;position:fixed;top:2.5%;left:2%;"
-                    class="img-fluid" />
-            </div>
-            <div class="button_container" id="toggle">
-                <span class="top"></span>
-                <span class="middle"></span>
-                <span class="bottom"></span>
+    <div class="container-fluid conNavbar">
+        <div class="container con">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                    <img src="Asset/Image/whitelogo.png" class="img-fluid imgLogo">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                    <div class="button_container" id="toggle">
+                        <span class="top"></span>
+                        <span class="middle"></span>
+                        <span class="bottom"></span>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+
+    <div class="container-fluid conServices1 h-100" style="padding-top: 50px;">
         <div class="container con h-100">
-            <div class="row align-items-center h-100" style="position:relative;">
+            <div class="row align-items-center h-100" style="position:relative;padding-top: 100px;">
                 <div class="divServicesTitle">
                     <p class="pServicesTitle"> Software Development</p>
                 </div>
@@ -76,7 +82,7 @@
     </div>
     <div class="container-fluid">
         <div class="container con">
-            <div class="row" style="margin-top: 70px;">
+            <div class="row" style="margin: 70px;">
                 <div class="col-lg-6 text-center">
                     <p class="pFrameworks">FRAMEWORKS</p>
                     <img src="Asset/Image/framework.png" class="img-fluid" style="width: 500px;">
@@ -89,6 +95,39 @@
         </div>
     </div>
 
+    <div class="container-fluid" style="background-color: #212121;">
+        <div class="container con" style="padding: 40px 0px;">
+            <div class="row" style="margin-top: 40px;">
+                <div class="col-lg-6">
+                    <div class="form-inline">
+                        <p class="pFooter">HOME</p>
+                        <P class="pFooter">SERVICES</P>
+                        <P class="pFooter">MEET THE TEAM</P>
+                        <P class="pFooter">CONTACT</P>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-inline float-right divFooter" style="margin-top: -10px;">
+                        <img src="Asset/Image/facebook.png" class="img-fluid imgFooter"
+                            style="width: 28px;margin-right: 15px;">
+                        <img src="Asset/Image/instagram.png" class="img-fluid imgFooter"
+                            style="width: 28px;margin-right: 15px;">
+                        <img src="Asset/Image/linkedin.png" class="img-fluid imgFooter" style="width: 28px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<script>
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        if (scroll < 50) {
+            $('.conNavbar').css('background', 'transparent');
+        } else {
+            $('.conNavbar').css('background', 'black');
+        }
+    });
+</script>
 
 </html>

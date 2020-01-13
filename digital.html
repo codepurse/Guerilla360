@@ -37,13 +37,30 @@
         </nav>
     </div>
 
-    <div class="container-fluid conServices2 h-100">
+    <div class="container-fluid conNavbar">
+        <div class="container con">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                    <img src="Asset/Image/whitelogo.png" class="img-fluid imgLogo">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                    <div class="button_container" id="toggle">
+                        <span class="top"></span>
+                        <span class="middle"></span>
+                        <span class="bottom"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid conServices2 h-100" style="padding-top: 50px;">
         <div class="container con h-100">
             <div class="row align-items-center h-100" style="position:relative;">
                 <div class="divServicesTitle">
                     <p class="pServicesTitle">Digital Marketting</p>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 colRemove">
 
                 </div>
                 <div class="col-lg-6" style="margin-top: 10%;">
@@ -57,38 +74,38 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid h-100">
-        <div class="container con h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-lg-3 text-center">
+    <div class="container-fluid h-100 conService">
+        <div class="container con h-100 conService">
+            <div class="row h-100 align-items-center conService">
+                <div class="col-lg-3 col-md-6 col-sm-6 text-center">
                     <div class="divService" style="margin-top: 30px;">
                         <img src="Asset/Image/imgservices1.png" class="img-fluid imgServices mx-auto d-flex">
                     </div>
-                    <div class = "divHr" style="top: 120px;">    
+                    <div class="divHr hrRemove" style="top: 120px;">
                     </div>
-                    <p  class = "pServices">SOCIAL MEDIA MARKETING AND MANAGEMENT</p c>
+                    <p class="pServices">SOCIAL MEDIA MARKETING AND MANAGEMENT</p c>
                 </div>
-                <div class="col-lg-3 text-center">
+                <div class="col-lg-3 col-md-6 col-sm-6 text-center">
                     <div class="divService">
                         <img src="Asset/Image/imgservices2.png" class="img-fluid imgServices mx-auto d-flex">
                     </div>
-                    <div class = "divHr">    
+                    <div class="divHr hrRemove2">
                     </div>
-                    <p class = "pServices">CONTENT DEVELOPMENT</P>
+                    <p class="pServices">CONTENT DEVELOPMENT</P>
                 </div>
-                <div class="col-lg-3 text-center">
+                <div class="col-lg-3 col-md-6 col-sm-6 text-center">
                     <div class="divService">
                         <img src="Asset/Image/imgservices3.png" class="img-fluid imgServices mx-auto d-flex">
                     </div>
-                    <div class = "divHr">    
+                    <div class="divHr hrRemove">
                     </div>
-                    <P class = "pServices">SOCIAL MEDIA STRATEGY</P>
+                    <P class="pServices">SOCIAL MEDIA STRATEGY</P>
                 </div>
-                <div class="col-lg-3 text-center">
+                <div class="col-lg-3 col-md-6 col-sm-6 text-center">
                     <div class="divService">
                         <img src="Asset/Image/imgservices4.png" class="img-fluid imgServices mx-auto d-flex">
                     </div>
-                    <P class = "pServices">CAMPAIGN REPORTING AND ANALYTICS</P>
+                    <P class="pServices">CAMPAIGN REPORTING AND ANALYTICS</P>
                 </div>
             </div>
         </div>
@@ -154,6 +171,46 @@
             </div>
         </div>
     </div>
+    <div class="container-fluid" style="background-color: #212121;">
+        <div class="container con" style="padding: 40px 0px;">
+            <div class="row" style="margin-top: 40px;">
+                <div class="col-lg-6">
+                    <div class="form-inline">
+                        <p class="pFooter">HOME</p>
+                        <P class="pFooter">SERVICES</P>
+                        <P class="pFooter">MEET THE TEAM</P>
+                        <P class="pFooter">CONTACT</P>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-inline float-right divFooter" style="margin-top: -10px;">
+                        <img src="Asset/Image/facebook.png" class="img-fluid imgFooter"
+                            style="width: 28px;margin-right: 15px;">
+                        <img src="Asset/Image/instagram.png" class="img-fluid imgFooter"
+                            style="width: 28px;margin-right: 15px;">
+                        <img src="Asset/Image/linkedin.png" class="img-fluid imgFooter" style="width: 28px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<script>
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        if (scroll < 50) {
+            $('.conNavbar').css('background', 'transparent');
+        } else {
+            $('.conNavbar').css('background', 'black');
+        }
+    });
+
+
+    if ($(window).width() < 568) {
+        $('.conService').removeClass('h-100');
+    } else {
+        $('.conService').addClass('h-100');
+    }
+</script>
 
 </html>

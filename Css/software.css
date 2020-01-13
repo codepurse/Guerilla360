@@ -18,15 +18,62 @@
     src: url("../Asset/Font/gotham_ssv/Gotham-Light.otf");
 }
 
-@media only screen and (min-width: 1200px) {
-    .con {
-        max-width: 1300px !important;
+@media only screen and (max-width: 883px) {
+    .pServicesTitle {
+        font-size: 2rem !important;
+        text-shadow: none !important;
     }
 }
 
 @media only screen and (max-width: 1266px) {
     .con {
         max-width: 1366px;
+    }
+}
+
+@media only screen and (max-width: 763px) {
+    .pServicesTitle {
+        font-size: 1.4rem !important;
+        text-shadow: none !important;
+        margin-top: 40px;
+    }
+    .pServicesDescription {
+        font-size: 1rem !important;
+        margin-top: 0px !important;
+    }
+    .pType, .pFrameworks {
+        font-size: 1.4rem !important;
+        text-align: left !important;
+        margin-top: 40px;
+    }
+    .pFooter {
+        font-size: 0.9rem !important;
+        text-align: center !important;
+    }
+    .divFooter {
+        margin-top: 10px !important;
+        float: left !important;
+    }
+    .colRemove {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .hrRemove2 {
+        display: none !important;
+    }
+    .divHr {
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .hrRemove {
+        display: none !important;
+    }
+    .pServices {
+        font-size: 1.2rem !important;
     }
 }
 
@@ -37,10 +84,9 @@ html, body {
 }
 
 .button_container {
-    position: fixed;
-    top: 5%;
-    right: 2%;
-    height: px;
+    position: absolute;
+    right: 5px;
+    top: 28px;
     background-color: black;
     width: 35px;
     cursor: pointer;
@@ -256,11 +302,19 @@ a:hover:after {
     }
 }
 
+.conNavbar {
+    background-color: transparent;
+    position: fixed;
+    transition: all 0.2s;
+    z-index: 99999999;
+}
+
 .pServicesTitle {
     font-family: Mont DEMO;
     color: #e2e2e2;
     font-size: 4rem;
     font-weight: bold;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
 }
 
 .conServices1 {
@@ -356,8 +410,9 @@ a:hover:after {
     height: 2px;
     background-color: white;
     position: absolute;
-    left: 250px;
+    left: 200px;
     top: 85px;
+    z-index: -1;
 }
 
 .pServices {
@@ -387,4 +442,43 @@ a:hover:after {
     font-size: 1rem;
     color: #d3b675;
     font-weight: bold;
+}
+
+.pOutsourcingTitleDesc {
+    font-family: Gothan light;
+    font-size: 1rem;
+    color: white;
+    margin-top: -10px;
+}
+
+.pFooter {
+    font-family: Mont Demo;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.pFooter:hover {
+    color: #d3b675;
+}
+
+.imgFooter {
+    width: 28px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.imgFooter:hover {
+    -webkit-filter: opacity(0.2) drop-shadow(0 0 0 #d3b675);
+    filter: opacity(0.2) drop-shadow(0 0 0 #d3b675);
+}
+
+.imgLogo {
+    width: 80px;
+    cursor: pointer;
+    transition: all 0.2s;
 }
