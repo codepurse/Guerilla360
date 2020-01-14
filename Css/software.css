@@ -361,6 +361,16 @@ a:hover:after {
     font-weight: bold;
 }
 
+.conService {
+    padding: 50px 0px;
+}
+
+.pservices {
+    font-family: Mont Demo;
+    font-size: 3.5rem;
+    color: #d3b675;
+}
+
 .conServices2 {
     background: url("../Asset/Image/bg2.png");
     background-position: center center;
