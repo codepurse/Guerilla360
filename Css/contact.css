@@ -343,3 +343,16 @@ a:hover:after {
 .conNavbar {
     transition: all 0.2s;
 }
+
+.btnSend {
+    font-family: Gotham light;
+    font-size: 1rem;
+    padding: 10px 10px;
+    border: 0px;
+    color: white;
+    background-color: #d3b675;
+    cursor: pointer;
+    transition: all 0.2s;
+    width: 100px;
+    margin-top: 10px;
+}

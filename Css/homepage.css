@@ -39,6 +39,12 @@
     }
 }
 
+@media only screen and (max-width: 980px) {
+    .btnLearn{
+        width: 100% !important;
+    }
+}
+
 @media only screen and (max-width: 511px) {
     .pname, .psurname {
         font-size: 45px !important;
@@ -94,6 +100,9 @@
     }
     .pAboutDesc {
         font-size: 0.9rem !important;
+    }
+    .conServices {
+        height: auto !important;
     }
 }
 
@@ -548,7 +557,7 @@ a:hover:after {
 
 .imgG {
     z-index: -1;
-    width: 400px;
+    width: 550px;
     text-align: center;
     opacity: 0.2;
 }
@@ -604,4 +613,44 @@ a:hover:after {
     width: 80px;
     cursor: pointer;
     transition: all 0.2s;
+}
+
+.pOurServices {
+    font-family: Gotham light;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.pWe {
+    font-family: Gotham light;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.conServices {
+    background: url("../Asset/Image/s.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px;
+    height: 400px;
+    z-index: -100;
+}
+
+.btnLearn {
+    font-family: Gotham light;
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 10px 10px;
+    width: 180px;
+    transition: all 0.2s;
+    margin-top: 30px;
+    outline: #d3b675;
+}
+
+.btnLearn:hover {
+    color: #d3b675;
 }
