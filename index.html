@@ -76,7 +76,7 @@
         </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid" style="display:none;">
         <div class="container conG">
             <div class="row" style="padding-top: 150px;padding-bottom: 50px;">
                 <div class="col-lg-12 text-center" style="position:relative;display: inline-block;">
@@ -105,7 +105,7 @@
         </div>
     </div>
 
-   
+
     <div class="container-fluid conServices">
         <div class="container">
             <div class="row" style="padding-top: 70px;margin-top: 100px;">
@@ -114,7 +114,7 @@
                     <p class="pWe">We Provide Quality Services</p>
                 </div>
             </div>
-            <div class="row rowCard" style = "margin-top: 60px;">
+            <div class="row rowCard" style="margin-top: 60px;">
                 <div class="col-lg-12">
                     <div class="card-deck" style="margin-top: px;">
                         <div class="card text-center cardSolution1" style="padding: 30px 10px;"
@@ -152,7 +152,7 @@
             </div>
         </div>
     </div>
- 
+
     <div class="container-fluid" style="background-color: #e2e2e2;" style="margin-top:-500px !important;">
         <div class="container">
             <div class="row" style="padding-top: 200px;padding-bottom: 20px;background-color: #e2e2e2;">
@@ -187,6 +187,8 @@
             </div>
         </div>
     </div>
+
+
     <div class="container-fluid" style="background-color: #212121;">
         <div class="container con" style="padding: 40px 0px;">
             <div class="row" style="margin-top: 40px;">
@@ -212,6 +214,15 @@
     </div>
 </body>
 <script>
+    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    var element = document.getElementById('text');
+    if (isMobile) {
+        $('.conVideo').attr("style", "display: none !important;")
+        $('.banner').attr("style", "display: none !important;")
+    } else {
+        $('.banner').attr("style", "block: none !important;")
+    }
+
     var vid1 = document.getElementById("myVideo1");
     function codeAddress() {
         vid1.play();
@@ -265,31 +276,17 @@
         }
     });
 
-    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-    var element = document.getElementById('text');
-    if (isMobile) {
-        $('.banner').attr("style", "display: none !important;")
-    } else {
-        $('.banner').attr("style", "block: none !important;")
-    }
+
 
     var vid = document.getElementById("myVideo");
     var vid1 = document.getElementById("myVideo1");
+    document.getElementById("myVideo1").defaultPlaybackRate = 2.0;
     vid1.onended = function () {
         $(".conVideo").addClass("animated fadeOut faster");
         vid.play();
         $('html').css('overflow', 'visible');
         $('body').css('overflow', 'visible');
     };
-
-    window.onload = function () {
-        $(".conVideo").addClass("animated fadeOut faster");
-        vid.play();
-        $(".conVideo").css("display", "none");
-        $('html').css('overflow', 'visible');
-        $('body').css('overflow', 'visible');
-    }
-
 
 </script>
 

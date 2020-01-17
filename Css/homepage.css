@@ -78,7 +78,7 @@
         padding-bottom: 100px !important;
     }
     .overlay nav {
-        font-size: 30px !important;
+        font-size: 27px !important;
         margin-left: 0% !important;
     }
     .overlay ul li {
@@ -462,7 +462,7 @@ a:hover:after {
     margin: auto;
     overflow: hidden;
     position: relative;
-    width: 960px;
+    width: auto;
 }
 
 .slider::before, .slider::after {
@@ -487,10 +487,10 @@ a:hover:after {
 }
 
 .slider .slide-track {
-    -webkit-animation: scroll 35s linear infinite;
-    animation: scroll 35s linear infinite;
+    -webkit-animation: scroll 20s linear infinite;
+    animation: scroll 20s linear infinite;
     display: flex;
-    width: calc(250px * 5);
+    width: calc(250px * 20);
 }
 
 .slider .slide {
