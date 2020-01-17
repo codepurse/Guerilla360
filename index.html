@@ -221,6 +221,8 @@
         $('.banner').attr("style", "display: none !important;")
     } else {
         $('.banner').attr("style", "block: none !important;")
+        $('html').css('overflow', 'visible');
+        $('body').css('overflow', 'visible');
     }
 
     var vid1 = document.getElementById("myVideo1");
