@@ -104,6 +104,9 @@
     .conServices {
         height: auto !important;
     }
+    .button_container {
+        right: 7% !important;
+    }
 }
 
 @media (min-aspect-ration:16/9) {
