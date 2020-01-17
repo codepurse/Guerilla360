@@ -282,7 +282,7 @@
 
     var vid = document.getElementById("myVideo");
     var vid1 = document.getElementById("myVideo1");
-    document.getElementById("myVideo1").defaultPlaybackRate = 2.0;
+    document.getElementById("myVideo1").playbackRate  = 2.0;
     vid1.onended = function () {
         $(".conVideo").addClass("animated fadeOut faster");
         vid.play();
