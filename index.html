@@ -219,6 +219,8 @@
     if (isMobile) {
         $('.conVideo').attr("style", "display: none !important;")
         $('.banner').attr("style", "display: none !important;")
+        $('html').css('overflow', 'visible');
+        $('body').css('overflow', 'visible');
     } else {
         $('.banner').attr("style", "block: none !important;")
         $('html').css('overflow', 'visible');
@@ -282,7 +284,7 @@
 
     var vid = document.getElementById("myVideo");
     var vid1 = document.getElementById("myVideo1");
-    document.getElementById("myVideo1").playbackRate  = 2.0;
+    document.getElementById("myVideo1").playbackRate = 1.5;
     vid1.onended = function () {
         $(".conVideo").addClass("animated fadeOut faster");
         vid.play();
